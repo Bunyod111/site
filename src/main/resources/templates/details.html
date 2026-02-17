@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Details (SWIFT)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; padding: 20px; margin: 0; }
+        .container { max-width: 700px; width: 100%; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); overflow: hidden; }
+        .header { background: #E6B000; color: white; padding: 25px; text-align: center; }
+        .header h1 { color: #333; margin: 0; font-size: 24px; font-weight: 600; }
+        .header p { color: #444; margin: 10px 0 0 0; }
+        .content { padding: 30px; }
+        h3 { margin-top: 0; color: #333; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+
+        .swift-box { border: 1px solid #ddd; background-color: #fafafa; padding: 20px; border-radius: 8px; margin-bottom: 30px; }
+        .row { display: flex; flex-wrap: wrap; margin-bottom: 12px; border-bottom: 1px dashed #ddd; padding-bottom: 8px; }
+        .row:last-child { border: none; }
+        .label { width: 40%; color: #666; font-size: 13px; font-weight: 500; min-width: 140px; }
+        .value { width: 60%; color: #000; font-size: 14px; font-weight: bold; font-family: Consolas, monospace; user-select: all; }
+
+        .btn-upload { display: block; width: 100%; background: #007bff; color: white; text-align: center; text-decoration: none; padding: 16px; border-radius: 8px; font-size: 18px; font-weight: bold; margin-top: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .btn-upload:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Bank Transfer Details (SWIFT)</h1>
+        <p>Mezon Inspiring School</p>
+    </div>
+
+    <div class="content">
+
+        <div class="swift-box">
+            <h3>1. Beneficiary (Receiver)</h3>
+
+            <div class="row">
+                <span class="label">Beneficiary Name:</span>
+                <span class="value">JV "Mezon 4 Education" LLC</span>
+            </div>
+            <div class="row">
+                <span class="label">Address:</span>
+                <span class="value">Tashkent, Uzbekistan</span>
+            </div>
+            <div class="row">
+                <span class="label">Account Number (USD):</span>
+                <span class="value">2020 8840 4052 5621 5001</span>
+            </div>
+
+            <h3 style="margin-top: 25px;">2. Beneficiary Bank</h3>
+
+            <div class="row">
+                <span class="label">Bank Name:</span>
+                <span class="value">PJSCB "ORIENT FINANS"</span>
+            </div>
+            <div class="row">
+                <span class="label">SWIFT / BIC Code:</span>
+                <span class="value">ORFBUZ22</span>
+            </div>
+            <div class="row">
+                <span class="label">Bank Address:</span>
+                <span class="value">Tashkent, Uzbekistan</span>
+            </div>
+
+            <h3 style="margin-top: 25px;">3. Intermediary Bank (Correspondent)</h3>
+            <p style="font-size: 11px; color: #666; margin-bottom: 10px;">Required for USD transfers from abroad</p>
+
+            <div class="row">
+                <span class="label">Correspondent Bank:</span>
+                <span class="value">THE BANK OF NEW YORK MELLON, NY, USA</span>
+            </div>
+            <div class="row">
+                <span class="label">SWIFT of Correspondent:</span>
+                <span class="value">IRVTUS3N</span>
+            </div>
+            <div class="row">
+                <span class="label">Correspondent Account:</span>
+                <span class="value">8901718122</span>
+            </div>
+        </div>
+
+        <div style="text-align: center; color: #555; font-size: 14px; margin-bottom: 20px;">
+            Transfer Amount: <strong>$5.00 USD</strong><br>
+            Payment Purpose: <strong>Registration Fee for Math Contest</strong>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid #eee;">
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbX6yaFWIPHATcrhEsod_XTiyuqTyd69O3YGjRo64oqIselw/viewform" target="_blank" class="btn-upload">
+            📤 Upload Receipt & Register
+        </a>
+
+    </div>
+</div>
+
+</body>
+</html>

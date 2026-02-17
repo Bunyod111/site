@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Mezon School - Payment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: #f4f7f6; margin: 0; }
+        .card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; width: 350px; position: relative; }
+
+        .lang-switch { position: absolute; top: 15px; right: 20px; font-size: 13px; font-weight: bold; color: #888; cursor: pointer; }
+        .lang-switch span.active { color: #0056b3; text-decoration: underline; }
+
+        h2 { color: #333; margin-bottom: 5px; font-size: 20px; min-height: 50px; display: flex; align-items: center; justify-content: center;}
+        .sub-title { color: #777; margin-top: 0; margin-bottom: 20px; font-size: 14px; }
+
+        .price { font-size: 38px; color: #2c3e50; margin: 20px 0 5px 0; font-weight: bold; }
+        .price-sub { font-size: 13px; color: #999; margin-bottom: 25px; }
+
+        .agreement-box { text-align: left; font-size: 13px; margin: 20px 0; color: #555; display: flex; align-items: flex-start; line-height: 1.4; }
+        .agreement-box input { margin-right: 10px; margin-top: 3px; transform: scale(1.2); flex-shrink: 0;}
+        .agreement-box a { color: #0056b3; text-decoration: underline; }
+
+        .btn { background-color: #ccc; color: white; padding: 15px 0; text-decoration: none; border-radius: 8px; display: block; width: 100%; font-size: 18px; border: none; cursor: not-allowed; transition: 0.3s; font-weight: 600; }
+        .btn.active { background-color: #0056b3; cursor: pointer; }
+        .btn.active:hover { background-color: #004494; }
+
+        .logos { margin-top: 30px; display: flex; justify-content: center; gap: 8px; align-items: center; flex-wrap: wrap; }
+        .logo-box { border: 1px solid #eee; border-radius: 6px; background: #fff; height: 38px; padding: 0 8px; display: flex; align-items: center; justify-content: center; transition: 0.3s; }
+        .logo-box:hover { border-color: #ccc; }
+        .logo-img { height: 22px; width: auto; display: block; object-fit: contain; max-width: 60px; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="lang-switch">
+        <span id="lang-ru" class="active" onclick="setLang('ru')">RU</span> |
+        <span id="lang-en" onclick="setLang('en')">EN</span>
+    </div>
+
+    <h2 id="title-text">Второй тур MathOlimp-2026</h2>
+    <p class="sub-title">Mezon Inspiring School</p>
+
+    <div class="price">$5.00</div>
+    <div class="price-sub" id="price-sub-text">(60 995.50 UZS по курсу ЦБ РУз)</div>
+
+    <form action="/create-payment" method="post">
+
+        <div class="agreement-box">
+            <input type="checkbox" id="agree" onchange="toggleButton()">
+            <label for="agree" id="agree-label">
+                Я согласен с условиями <a href="/offer" target="_blank">Публичной оферты</a>
+            </label>
+        </div>
+
+        <button type="submit" id="payBtn" class="btn" disabled>Pay $5.00</button>
+    </form>
+
+    <div class="logos">
+        <div class="logo-box" style="background-color: #1a1f71; border: none;">
+            <img src="/images/Visa_Brandmark_White_RGB_2021.png" alt="Visa" class="logo-img">
+        </div>
+        <div class="logo-box">
+            <img src="/images/ma_symbol_opt_73_3x.png" alt="Mastercard" class="logo-img">
+        </div>
+        <div class="logo-box">
+            <img src="/images/humo-logo-more.png" alt="Humo" class="logo-img">
+        </div>
+    </div>
+</div>
+
+<script>
+    const texts = {
+        ru: {
+            title: "Второй тур MathOlimp-2026", // Обновлено
+            subPrice: "(60 995.50 UZS по курсу ЦБ РУз)",
+            agreeBefore: "Я согласен с условиями ",
+            agreeLink: "Публичной оферты",
+            btn: "Оплатить $5.00"
+        },
+        en: {
+            title: "MathOlimp-2026 - 2nd Tour", // Тоже обновил для красоты, чтобы совпадало
+            subPrice: "(60 995.50 UZS at CBU rate)",
+            agreeBefore: "I agree with the ",
+            agreeLink: "Public Offer terms",
+            btn: "Pay $5.00"
+        }
+    };
+
+    function setLang(lang) {
+        document.getElementById('lang-ru').classList.toggle('active', lang === 'ru');
+        document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+        document.getElementById('title-text').innerText = texts[lang].title;
+        document.getElementById('price-sub-text').innerText = texts[lang].subPrice;
+        document.getElementById('payBtn').innerText = texts[lang].btn;
+        const label = document.getElementById('agree-label');
+        label.innerHTML = texts[lang].agreeBefore + '<a href="/offer" target="_blank">' + texts[lang].agreeLink + '</a>';
+    }
+
+    function toggleButton() {
+        const checkbox = document.getElementById('agree');
+        const button = document.getElementById('payBtn');
+        if (checkbox.checked) {
+            button.disabled = false;
+            button.classList.add('active');
+        } else {
+            button.disabled = true;
+            button.classList.remove('active');
+        }
+    }
+</script>
+
+</body>
+</html>

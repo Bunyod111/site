@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Public Offer / Ommaviy Oferta / Публичная оферта</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: 'Segoe UI', Helvetica, Arial, sans-serif; padding: 20px; max-width: 900px; margin: 0 auto; background: #f9f9f9; color: #333; line-height: 1.6; }
+        .container { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .back-btn { display: inline-block; padding: 10px 20px; background: #0056b3; color: white; text-decoration: none; border-radius: 5px; margin-bottom: 20px; font-weight: bold; transition: 0.3s; }
+        .back-btn:hover { background: #004494; }
+
+        /* TABS */
+        .tabs { display: flex; border-bottom: 2px solid #eee; margin-bottom: 25px; }
+        .tab-btn { padding: 12px 25px; cursor: pointer; border: none; background: none; font-size: 16px; font-weight: bold; color: #777; transition: 0.3s; border-bottom: 3px solid transparent; outline: none; }
+        .tab-btn:hover { color: #0056b3; background-color: #f0f8ff; }
+        .tab-btn.active { color: #0056b3; border-bottom: 3px solid #0056b3; }
+
+        /* CONTENT */
+        .tab-content { display: none; animation: fadeIn 0.3s; }
+        .tab-content.active { display: block; }
+
+        h1 { text-align: center; margin-bottom: 10px; font-size: 24px; color: #0056b3; }
+        .date-place { text-align: center; font-size: 14px; color: #666; margin-bottom: 30px; font-style: italic; }
+        h2 { font-size: 18px; margin-top: 30px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 5px; text-transform: uppercase; }
+
+        p { margin-bottom: 15px; text-align: justify; }
+        ul { margin-bottom: 15px; padding-left: 20px; }
+        li { margin-bottom: 8px; }
+
+        /* Bank details box */
+        .bank-details { background: #f8f9fa; border: 1px solid #e9ecef; padding: 15px; border-radius: 8px; font-size: 14px; margin: 10px 0; }
+        .bank-details strong { color: #0056b3; }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+<a href="/" class="back-btn">← Orqaga / Назад / Back</a>
+
+<div class="container">
+
+    <div class="tabs">
+        <button class="tab-btn active" onclick="openTab(event, 'uz')">O'zbekcha</button>
+        <button class="tab-btn" onclick="openTab(event, 'ru')">Русский</button>
+        <button class="tab-btn" onclick="openTab(event, 'en')">English</button>
+    </div>
+
+    <div id="uz" class="tab-content active">
+        <h1>OMMAVIY OFERTA SHARTNOMASI</h1>
+        <div class="date-place">fan olimpiadasini tashkil etish va o‘tkazish bo‘yicha xizmatlar ko‘rsatish to‘g‘risida<br>Toshkent sh., 21 Dekabr 2025 y.</div>
+
+        <p>Ushbu Shartnoma <strong>«MEZON 4 EDUCATION» QK («Mezon Inspiring School»)</strong>, keyingi o‘rinlarda “Tashkilotchi” deb yuritiladigan, direktor Mirzaxmedova X.M. nomidan, Ustav hamda ta’lim xizmatlarini ko‘rsatish uchun berilgan <strong>128088-sonli Litsenziya</strong> asosida faoliyat yurituvchi, har qanday jismoniy shaxsga, keyingi o‘rinlarda “Buyurtmachi” deb yuritiladigan (voyaga yetmagan Ishtirokchining qonuniy vakili yoki muomalaga layoqatli bo‘lgan taqdirda Ishtirokchining o‘zi), quyida bayon etilgan shartlar asosida pullik fan olimpiadasini tashkil etish va o‘tkazish bo‘yicha xizmatlar ko‘rsatish to‘g‘risida shartnoma tuzishni taklif etuvchi rasmiy ommaviy oferta hisoblanadi (keyingi o‘rinlarda — “Olimpiada”).</p>
+
+        <h2>1. ATAMALAR VA TA’RIFLAR</h2>
+        <ul>
+            <li><strong>Oferta</strong> – Tashkilotchining rasmiy veb-saytida e’lon qilingan mazkur hujjat.</li>
+            <li><strong>Oferta aksepti</strong> – Buyurtmachi tomonidan 3-bo‘limda ko‘rsatilgan harakatlarni amalga oshirish orqali mazkur Oferta shartlarini to‘liq va so‘zsiz qabul qilish.</li>
+            <li><strong>Buyurtmachi</strong> – Oferta akseptini amalga oshirgan jismoniy shaxs.</li>
+            <li><strong>Ishtirokchi</strong> – manfaatlarini ko‘zlab Buyurtmachi mazkur Shartnomani tuzayotgan jismoniy shaxs (o‘quvchi) yoki agar bevosita ishtirok etayotgan bo‘lsa, Buyurtmachining o‘zi.</li>
+            <li><strong>Olimpiada</strong> – Olimpiada to‘g‘risidagi tasdiqlangan Nizomga muvofiq Tashkilotchi tomonidan o‘tkaziladigan matematika bo‘yicha intellektual musobaqa.</li>
+            <li><strong>Olimpiada to‘g‘risidagi Nizom</strong> – Olimpiadaning maqsad va vazifalari, muddatlari, o‘tkazish qoidalari, g‘oliblarni aniqlash tartibi va boshqa muhim shartlarini belgilovchi Tashkilotchining ichki hujjati.</li>
+            <li><strong>Tashkilotchining sayti</strong> – Internet tarmog‘idagi rasmiy veb-sayt: www.mezon.uz.</li>
+            <li><strong>Ro‘yxatdan o‘tish badali</strong> – Olimpiadani tashkil etish, o‘tkazish va axborot-uslubiy ta’minlash bo‘yicha Tashkilotchi xizmatlari uchun to‘lov.</li>
+        </ul>
+
+        <h2>2. SHARTNOMA PREDMETI</h2>
+        <p>2.1. Tashkilotchi Buyurtmachiga Ishtirokchining [«Mezon Math Olimp 2026»] Olimpiadasida (keyingi o‘rinlarda – Xizmatlar) ishtirok etishini tashkil qilish va ta’minlash majburiyatini oladi, Buyurtmachi esa ushbu Xizmatlar uchun Tashkilotchi tomonidan belgilangan miqdorda haq to‘lash majburiyatini oladi.</p>
+        <p>2.2. Olimpiadaning nomi, fani, o‘tkazilish sanalari, joyi, Ro‘yxatdan o‘tish badali miqdori va boshqa tafsilotlar Tashkilotchining saytida va Olimpiada to‘g‘risidagi Nizomda e’lon qilinadi.</p>
+
+        <h2>3. SHARTNOMANI TUZISH TARTIBI (OFERTA AKSEPTI)</h2>
+        <p>3.1. Mazkur Shartnoma Buyurtmachi tomonidan quyidagi konkludent (aniq maqsadga qaratilgan) harakatlar amalga oshirilgan paytdan boshlab tuzilgan hisoblanadi:</p>
+        <ul>
+            <li>a) Tashkilotchining saytida Ishtirokchining ro‘yxatga olish shaklini to‘ldirish.</li>
+            <li>b) 5-bo‘limda nazarda tutilgan tartibda Ro‘yxatdan o‘tish badalini to‘liq hajmda to‘lash.</li>
+        </ul>
+        <p>3.2. Oferta akseptini amalga oshirish orqali Buyurtmachi quyidagilarni tasdiqlaydi:</p>
+        <ul>
+            <li>a) Mazkur Oferta va Olimpiada to‘g‘risidagi Nizomning barcha shartlari bilan tanishganligini, ularga roziligini va to‘liq qabul qilishini.</li>
+            <li>b) 6-bo‘limga muvofiq Ishtirokchining (va o‘zining) shaxsiy ma’lumotlarini qayta ishlashga rozilik berishini.</li>
+        </ul>
+
+        <h2>4. TOMONLARNING HUQUQ VA MAJBURIYATLARI</h2>
+        <p><strong>4.1. Tashkilotchi quyidagilarni o‘z zimmasiga oladi:</strong></p>
+        <ul>
+            <li>Olimpiadani Nizomga muvofiq tashkil etish va o‘tkazish.</li>
+            <li>To‘lov tasdiqlanganidan so‘ng Ishtirokchining Olimpiadada ishtirok etish imkoniyatini ta’minlash.</li>
+            <li>Ishtirokchilarning ishlarini tekshirish va yakunlarni chiqarish.</li>
+            <li>Natijalarni saytda e’lon qilish.</li>
+            <li>Shaxsiy ma’lumotlar maxfiyligini ta’minlash.</li>
+        </ul>
+        <p><strong>4.2. Tashkilotchi quyidagi huquqlarga ega:</strong></p>
+        <ul>
+            <li>Olimpiada Nizomi va Oferta shartlariga bir tomonlama o‘zgartirishlar kiritish (5 kun oldin xabar berish sharti bilan).</li>
+            <li>Qoidalar buzilgan taqdirda Ishtirokchini chetlashtirish (to‘lov qaytarilmaydi).</li>
+            <li>Fors-major holatlarida muddatlarni ko‘chirish.</li>
+        </ul>
+        <p><strong>4.3. Buyurtmachi quyidagilarni o‘z zimmasiga oladi:</strong></p>
+        <ul>
+            <li>Oferta va Nizom bilan tanishib chiqish.</li>
+            <li>Ishonchli ma’lumotlarni taqdim etish.</li>
+            <li>Ro‘yxatdan o‘tish badalini o‘z vaqtida to‘lash.</li>
+        </ul>
+
+        <h2>5. XIZMATLAR NARXI VA HISOBLASHISH TARTIBI</h2>
+        <p>5.1. Xizmatlar narxi (Ro‘yxatdan o‘tish badali) Tashkilotchining saytida e’lon qilinadi.</p>
+        <p>5.2. To‘lov usullari:</p>
+
+        <div class="bank-details">
+            <p style="margin-top:0;"><strong>O‘zbekiston Respublikasi fuqarolari uchun:</strong></p>
+            <ul>
+                <li><strong>1-usul: Bank o‘tkazmasi (So‘m):</strong><br>
+                    Bank: "ORIENT FINANS" XATB OPERU<br>
+                    H/r: 20208000105256215001<br>
+                    MFO: 01071<br>
+                    Qabul qiluvchi: «Mezon 4 Education» OK, STIR 307583662<br>
+                    <em>To‘lov maqsadi: (Ishtirokchi F.I.Sh. uchun ro‘yxatdan o‘tish yig‘imi)</em>
+                </li>
+                <li><strong>2-usul:</strong> PayMe, Uzum Bank, Octo to‘lov tizimlari orqali (saytda).</li>
+            </ul>
+        </div>
+
+        <div class="bank-details">
+            <p style="margin-top:0;"><strong>Chet el fuqarolari uchun (USD):</strong></p>
+            <ul>
+                <li>Bank: Private joint-stock commercial bank "ORIENT FINANS"<br>
+                    H/r: 20208840405256215001<br>
+                    SWIFT: ORFBUZ22XXX<br>
+                    MFO: 01071<br>
+                    Beneficiary: «Mezon 4 Education» OK, STIR 307583662<br>
+                    <em>Payment details: Registration fee for participant [Name]</em>
+                </li>
+            </ul>
+        </div>
+
+        <p>5.3. Mablag‘lar Tashkilotchining hisob raqamiga kelib tushgan paytdan boshlab Xizmatlar uchun haq to‘langan hisoblanadi.</p>
+        <p>5.4. Ishtirokchi kelmagan taqdirda to‘lov qaytarilmaydi.</p>
+        <p>5.5. To‘lov faqat Olimpiada butunlay bekor qilinganda qaytariladi.</p>
+
+        <h2>6. SHAXSIY MA’LUMOTLAR VA JAVOBGARLIK</h2>
+        <p>6.1. Buyurtmachi Tashkilotchiga o‘zining va Ishtirokchining shaxsiy ma’lumotlarini (F.I.Sh., sinfi, maktabi, telefoni) to‘plash va e’lon qilishga rozilik beradi.</p>
+        <p>7.1. Tomonlar majburiyatlarni bajarmaganlik uchun O‘zR qonunchiligiga muvofiq javobgar bo‘ladilar.</p>
+
+        <h2>9. TASHKILOTCHINING REKVIZITLARI</h2>
+        <div class="bank-details">
+            <strong>«MEZON 4 EDUCATION» Oilaviy korxonasi</strong><br>
+            Manzil: Toshkent sh., Yunusobod tumani, Yettichinor ko‘chasi, 74-uy<br>
+            Tel.: (71) 207-17-30<br>
+            H/r: 2020 8000 1052 5621 5001<br>
+            Bank: «Orient Finans» XATB qoshidagi OPERU<br>
+            MFO: 01071<br>
+            STIR: 307 583 662<br>
+            IFUT (OKED): 85200
+        </div>
+    </div>
+
+    <div id="ru" class="tab-content">
+        <h1>ДОГОВОР ПУБЛИЧНОЙ ОФЕРТЫ</h1>
+        <div class="date-place">на оказание услуг по организации и проведению платной предметной олимпиады<br>г. Ташкент, 25 декабря 2025 г.</div>
+
+        <p>Настоящий Договор является официальным публичным предложением (офертой) <strong>СП «MEZON 4 EDUCATION» («Mezon Inspiring School»)</strong>, именуемого в дальнейшем «Организатор», в лице директора Мирзахмедовой Х.М., действующего на основании Устава и <strong>Лицензии № 128088</strong> на оказание образовательных услуг, любому физическому лицу, именуемому в дальнейшем «Заказчик», заключить Договор на следующих условиях:</p>
+
+        <h2>1. ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ</h2>
+        <ul>
+            <li><strong>Оферта</strong> – настоящий документ, опубликованный на сайте.</li>
+            <li><strong>Акцепт Оферты</strong> – полное принятие условий путем регистрации и оплаты.</li>
+            <li><strong>Участник</strong> – учащийся, в интересах которого действует Заказчик.</li>
+            <li><strong>Олимпиада</strong> – интеллектуальное соревнование по математике.</li>
+            <li><strong>Положение об Олимпиаде</strong> – документ, определяющий правила проведения (опубликован на сайте).</li>
+        </ul>
+
+        <h2>2. ПРЕДМЕТ ДОГОВОРА</h2>
+        <p>2.1. Организатор обязуется оказать услуги по организации участия в Олимпиаде [«Mezon Math Olimp 2026»], а Заказчик обязуется оплатить их.</p>
+        <p>2.2. Детали (дата, место, стоимость) опубликованы на сайте.</p>
+
+        <h2>3. АКЦЕПТ ОФЕРТЫ</h2>
+        <p>3.1. Договор считается заключенным с момента:</p>
+        <ul>
+            <li>a) Заполнения формы регистрации на сайте.</li>
+            <li>b) Полной оплаты Регистрационного взноса.</li>
+        </ul>
+        <p>3.2. Акцептуя оферту, Заказчик подтверждает согласие с правилами и обработкой персональных данных.</p>
+
+        <h2>4. ПРАВА И ОБЯЗАННОСТИ</h2>
+        <p><strong>4.1. Организатор обязуется:</strong> Провести Олимпиаду, проверить работы, опубликовать результаты, обеспечить конфиденциальность.</p>
+        <p><strong>4.2. Организатор вправе:</strong> Изменять условия (уведомив за 5 дней), отстранить за нарушения, перенести сроки при форс-мажоре.</p>
+        <p><strong>4.3. Заказчик обязуется:</strong> Предоставить верные данные и оплатить взнос.</p>
+
+        <h2>5. СТОИМОСТЬ И ПОРЯДОК ОПЛАТЫ</h2>
+        <p>5.1. Стоимость указана на сайте.</p>
+        <div class="bank-details">
+            <p style="margin-top:0;"><strong>Для граждан Узбекистана:</strong></p>
+            <ul>
+                <li><strong>Способ 1:</strong> Перечисление на р/с 20208000105256215001 (Ориент Финанс, МФО 01071). Получатель: СП «Mezon 4 Education».</li>
+                <li><strong>Способ 2:</strong> Через PayMe, Uzum, Octo на сайте.</li>
+            </ul>
+        </div>
+        <div class="bank-details">
+            <p style="margin-top:0;"><strong>Для иностранных граждан (USD):</strong></p>
+            <ul>
+                <li>Bank: Orient Finans Bank<br>
+                    Account: 20208840405256215001<br>
+                    SWIFT: ORFBUZ22XXX<br>
+                    Beneficiary: Mezon 4 Education</li>
+            </ul>
+        </div>
+        <p>5.4. В случае неявки Участника взнос не возвращается.</p>
+
+        <h2>6. ПЕРСОНАЛЬНЫЕ ДАННЫЕ И ОТВЕТСТВЕННОСТЬ</h2>
+        <p>6.1. Заказчик дает согласие на публикацию ФИО, школы и результата Участника.</p>
+        <p>7.1. Ответственность сторон регулируется законодательством РУз.</p>
+
+        <h2>9. РЕКВИЗИТЫ ОРГАНИЗАТОРА</h2>
+        <div class="bank-details">
+            <strong>СП «MEZON 4 EDUCATION»</strong><br>
+            Адрес: г. Ташкент, Юнусабадский р-н, ул. Еттичинор, 74<br>
+            Р/с: 2020 8000 1052 5621 5001 (Ориент Финанс)<br>
+            МФО: 01071<br>
+            ИНН: 307 583 662
+        </div>
+    </div>
+
+    <div id="en" class="tab-content">
+        <h1>PUBLIC OFFER AGREEMENT</h1>
+        <div class="date-place">for the provision of services for organizing and conducting a paid subject olympiad<br>Tashkent city, December 21, 2025</div>
+
+        <p>This Agreement is an official public proposal (offer) of <strong>FE "MEZON 4 EDUCATION" ("Mezon Inspiring School")</strong>, hereinafter referred to as the "Organizer", represented by Director Mirzakhmedova Kh.M., acting on the basis of the Charter and <strong>License No. 128088</strong> for the provision of educational services, to any individual, hereinafter referred to as the "Customer" (being the legal representative of a minor Participant or the Participant themselves if they have reached legal capacity), to conclude an Agreement for the provision of services for organizing and conducting a paid subject olympiad (hereinafter referred to as the "Olympiad") on the following terms:</p>
+
+        <h2>1. TERMS AND DEFINITIONS</h2>
+        <ul>
+            <li><strong>Offer</strong> – this document published on the official website of the Organizer.</li>
+            <li><strong>Acceptance of the Offer</strong> – full and unconditional acceptance by the Customer of the terms of this Offer by performing the actions specified in Section 3.</li>
+            <li><strong>Customer</strong> – an individual who has performed the Acceptance of the Offer.</li>
+            <li><strong>Participant</strong> – an individual (student) in whose interests the Customer concludes this Agreement, or the Customer themselves if they are a direct participant.</li>
+            <li><strong>Olympiad</strong> – an intellectual competition in mathematics conducted by the Organizer in accordance with the approved Regulation on the Olympiad.</li>
+            <li><strong>Regulation on the Olympiad</strong> – an internal document of the Organizer defining the goals, objectives, timing, rules of conduct, and other essential conditions.</li>
+            <li><strong>Organizer's Website</strong> – the official website on the Internet at: www.mezon.uz.</li>
+            <li><strong>Registration Fee</strong> – payment for the Organizer's services for the organization, conduct, and information-methodological support of the Olympiad.</li>
+        </ul>
+
+        <h2>2. SUBJECT OF THE AGREEMENT</h2>
+        <p>2.1. The Organizer undertakes to provide the Customer with services for organizing and ensuring the Participant's participation in the Olympiad ["Mezon Math Olimp 2026"] (hereinafter referred to as Services), and the Customer undertakes to pay for these Services in the amount established by the Organizer.</p>
+        <p>2.2. The name of the Olympiad, subject, dates, location, the amount of the Registration Fee, and other details are published on the Organizer's website and in the Regulation on the Olympiad.</p>
+
+        <h2>3. PROCEDURE FOR CONCLUDING THE AGREEMENT</h2>
+        <p>3.1. This Agreement is considered concluded (Acceptance of the Offer) from the moment the Customer performs the following conclusive actions:</p>
+        <ul>
+            <li>a) Filling out the Participant's registration form on the Organizer's Website.</li>
+            <li>b) Payment of the Registration Fee in full in the manner provided for in Section 5.</li>
+        </ul>
+        <p>3.2. By performing the Acceptance of the Offer, the Customer confirms that they have read, agreed to, and fully accept all terms of this Offer and give consent to the processing of personal data.</p>
+
+        <h2>4. RIGHTS AND OBLIGATIONS OF THE PARTIES</h2>
+        <p><strong>4.1. The Organizer undertakes to:</strong></p>
+        <ul>
+            <li>Organize and conduct the Olympiad in accordance with the Regulation.</li>
+            <li>Ensure the Participant has access to participate after confirmation of payment.</li>
+            <li>Carry out the verification of works and summarize the results.</li>
+            <li>Publish the results on the Organizer's Website.</li>
+            <li>Ensure the confidentiality of the Participant's personal data.</li>
+        </ul>
+        <p><strong>4.2. The Organizer has the right to:</strong></p>
+        <ul>
+            <li>Unilaterally make changes to the Regulation and the terms of this Offer (notifying 5 days in advance).</li>
+            <li>Suspend the Participant in case of violation of the rules without refund.</li>
+            <li>Reschedule the Olympiad for valid reasons (force majeure).</li>
+        </ul>
+        <p><strong>4.3. The Customer undertakes to:</strong></p>
+        <ul>
+            <li>Carefully read the contents of this Offer and the Regulation.</li>
+            <li>Provide reliable data when registering.</li>
+            <li>Pay the Registration Fee in a timely manner.</li>
+        </ul>
+
+        <h2>5. COST OF SERVICES AND PAYMENT PROCEDURE</h2>
+        <p>5.1. The cost of Services (Registration Fee) is determined by the Organizer and published on the Organizer's Website.</p>
+        <p>5.2. Payment is made by the Customer by:</p>
+
+        <div class="bank-details">
+            <p style="margin-top:0;"><strong>For citizens of the Republic of Uzbekistan:</strong></p>
+            <ul>
+                <li><strong>Method 1:</strong> By transfer to the Organizer's bank account (UZS):<br>
+                    Bank: OPERU of PJSCB "ORIENT FINANS"<br>
+                    Account: 20208000105256215001<br>
+                    MFO: 01071<br>
+                    Recipient: Family Enterprise "Mezon 4 Education", TIN 307583662<br>
+                    <em>Payment Details: (Registration fee for participant [Full Name])</em>
+                </li>
+                <li><strong>Method 2:</strong> Through payment systems PayMe, Uzum Bank.</li>
+            </ul>
+        </div>
+
+        <div class="bank-details">
+            <p style="margin-top:0;"><strong>For foreign citizens (USD):</strong></p>
+            <ul>
+                <li>Bank: Private joint-stock commercial bank "ORIENT FINANS"<br>
+                    Account: 20208840405256215001<br>
+                    SWIFT: ORFBUZ22XXX<br>
+                    MFO: 01071<br>
+                    Recipient: FE "Mezon 4 Education", TIN 307583662<br>
+                    <em>Payment Details: (Registration fee for participant [Full Name])</em>
+                </li>
+            </ul>
+        </div>
+
+        <p>5.3. Services are considered paid from the moment funds are credited to the Organizer's settlement account.</p>
+        <p>5.4. In case of non-participation (illness or personal desire), the Registration Fee is not refundable.</p>
+        <p>5.5. A refund is carried out only in case of complete cancellation of the Olympiad by the Organizer.</p>
+
+        <h2>6. PROCESSING OF PERSONAL DATA</h2>
+        <p>6.1. By accepting this Offer, the Customer gives consent to the collection, storage, and processing of personal data (Full Name, grade, contact info) for ensuring registration and publishing results.</p>
+
+        <h2>7. LIABILITY AND DISPUTES</h2>
+        <p>7.1. Parties bear responsibility in accordance with the legislation of Uzbekistan.</p>
+        <p>8.2. All disputes are resolved through negotiations or submitted for consideration in accordance with the legislation of Uzbekistan.</p>
+
+        <h2>9. ORGANIZER'S DETAILS</h2>
+        <div class="bank-details">
+            <strong>Family Enterprise "MEZON 4 EDUCATION"</strong><br>
+            Address: Tashkent city, Yunusabad district, Yettichinor street, h. 74<br>
+            Tel.: (71) 207-17-30<br>
+            Account: 2020 8000 1052 5621 5001<br>
+            Bank: OPERU at PJSCB "Orient Finans"<br>
+            MFO: 01071<br>
+            TIN: 307 583 662<br>
+            OKED: 85200
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function openTab(evt, langName) {
+        var i, tabcontent, tablinks;
+
+        // Hide all tabs
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+            tabcontent[i].classList.remove("active");
+        }
+
+        // Remove active class from buttons
+        tablinks = document.getElementsByClassName("tab-btn");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show current tab
+        document.getElementById(langName).style.display = "block";
+        document.getElementById(langName).classList.add("active");
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+</body>
+</html>

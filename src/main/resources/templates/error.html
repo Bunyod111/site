@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Ошибка оплаты</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; padding: 40px; text-align: center; background: #fff0f0; }
+        .card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: inline-block; max-width: 600px; }
+        h1 { color: #d32f2f; }
+        .debug-info { background: #333; color: #0f0; padding: 15px; border-radius: 5px; text-align: left; font-family: monospace; font-size: 12px; overflow-x: auto; margin-top: 20px; }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h1>Ошибка создания платежа</h1>
+    <p>Банк отклонил запрос на создание платежа.</p>
+    <p>Скорее всего, магазин находится на модерации.</p>
+
+    <div class="debug-info">
+        <strong>Ответ банка (DEBUG):</strong><br>
+        <span th:text="${message}">Нет деталей ошибки</span>
+    </div>
+
+    <br>
+    <a href="/" style="color: #0056b3;">Вернуться на главную</a>
+</div>
+</body>
+</html>
